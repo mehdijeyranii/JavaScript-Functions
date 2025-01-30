@@ -51,3 +51,12 @@
   const sum = numbers.reduce((total, num) => total + num, 0);
   console.log(sum); // 15
 }
+
+{
+  const person = {
+    name: "Alice",
+    sayHello: () => console.log(`Hello, I'm ${this.name}`),
+  };
+
+  person.sayHello(); // Output: Hello, I'm undefined
+}
