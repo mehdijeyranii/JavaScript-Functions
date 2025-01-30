@@ -65,3 +65,26 @@
   // File downloaded
   // File processed
 }
+
+{
+  function readFile(fileName, callback) {
+    let error = false;
+    if (fileName !== "valid.txt") {
+      error = true;
+    }
+
+    if (error) {
+      callback("Error: File not found!", null);
+    } else {
+      callback(null, "File contents");
+    }
+  }
+
+  readFile("invalid.txt", (err, data) => {
+    if (err) {
+      console.log(err); // Output: Error: File not found!
+    } else {
+      console.log(data);
+    }
+  });
+}
