@@ -29,3 +29,7 @@
   const getUser = (name, age) => ({ name, age });
   console.log(getUser("Mehdi", 34)); // Output: { name: 'Mehdi', age: 34 }
 }
+
+{
+  setTimeout(() => console.log("Time is up!"), 2000); // Output: Show Time is up! after 2 seconds
+}
