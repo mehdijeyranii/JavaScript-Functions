@@ -55,3 +55,18 @@
   const sum = numbers.reduce((acc, num) => acc + num, 0);
   console.log(sum); // Output: 10
 }
+
+{
+  function repeat(n, action) {
+    if (n <= 0) return;
+    action();
+    repeat(n - 1, action);
+  }
+
+  repeat(3, () => console.log("Hello!"));
+
+  // Output:
+  // Hello!
+  // Hello!
+  // Hello!
+}
