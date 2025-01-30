@@ -55,8 +55,12 @@
 {
   const person = {
     name: "Alice",
-    sayHello: () => console.log(`Hello, I'm ${this.name}`),
+    // sayHello: () => console.log(`Hello, I'm ${this.name}`), // Error
+    sayHello() {
+      console.log(`Hello, I'm ${this.name}`);
+    },
   };
 
-  person.sayHello(); // Output: Hello, I'm undefined
+  // person.sayHello(); // Output: Hello, I'm undefined
+  person.sayHello(); // Output: Hello, I'm Alice
 }
