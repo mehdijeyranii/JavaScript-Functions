@@ -17,3 +17,14 @@
 
   console.log(calculate(5, 6, multiply)); // Output: 30
 }
+
+{
+  function greet(message) {
+    return function (name) {
+      console.log(`${message}, ${name}`);
+    };
+  }
+
+  const sayHello = greet("Hello");
+  sayHello("Mehdi"); // Output: Hello, Mehdi
+}
