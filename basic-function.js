@@ -40,3 +40,14 @@
   console.log(celsiusToFahrenheit(0)); // Output: 32
   console.log(celsiusToFahrenheit(100)); // Output: 212
 }
+
+{
+    function isPalindrome(str){
+        let reversed = str.split('').reverse().join('');
+        return str === reversed;
+    }
+
+    console.log(isPalindrome("radar")); // Output: true
+    console.log(isPalindrome("hello")); // Output: false
+    
+}
