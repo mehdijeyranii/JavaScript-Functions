@@ -22,3 +22,12 @@
   console.log(isEven(10)); // Output: true
   console.log(isEven(7)); // Output: false
 }
+
+{
+  function factorial(n) {
+    if (n === 0) return 1;
+    return n * factorial(n - 1);
+  }
+
+  console.log(factorial(5)); // Output: 120
+}
