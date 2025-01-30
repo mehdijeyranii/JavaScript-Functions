@@ -33,3 +33,16 @@
   // Data received
   // Data processed
 }
+
+{
+  function sum(a, b, callback) {
+    const result = a + b;
+    callback(result);
+  }
+
+  function displayResult(result) {
+    console.log(`Sum result: ${result}`);
+  }
+
+  sum(5, 10, displayResult); // Output: Sum result: 15
+}
