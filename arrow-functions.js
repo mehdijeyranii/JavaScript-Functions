@@ -24,3 +24,8 @@
 
   console.log(multiply(4, 5)); // Output: 20
 }
+
+{
+  const getUser = (name, age) => ({ name, age });
+  console.log(getUser("Mehdi", 34)); // Output: { name: 'Mehdi', age: 34 }
+}
