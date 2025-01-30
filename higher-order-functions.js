@@ -28,3 +28,12 @@
   const sayHello = greet("Hello");
   sayHello("Mehdi"); // Output: Hello, Mehdi
 }
+
+{
+  const double = (x) => x * 2;
+  const square = (x) => x * x;
+
+  const doubleAndSquare = (x) => square(double(x));
+
+  console.log(doubleAndSquare(3)); // Output: 36
+}
