@@ -46,3 +46,22 @@
 
   sum(5, 10, displayResult); // Output: Sum result: 15
 }
+
+{
+  function downloadFile(callback) {
+    setTimeout(() => {
+      console.log("File downloaded");
+      callback();
+    }, 3000);
+  }
+
+  function processFile() {
+    console.log("File processed");
+  }
+
+  downloadFile(processFile);
+
+  // Output after 3 seconds:
+  // File downloaded
+  // File processed
+}
