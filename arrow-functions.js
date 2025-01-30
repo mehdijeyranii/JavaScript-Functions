@@ -39,3 +39,9 @@
   const doubled = numbers.map((num) => num * 2);
   console.log(doubled); // Output: [ 2, 4, 6, 8 ]
 }
+
+{
+  const ages = [18, 25, 14, 30, 12];
+  const adults = ages.filter((age) => age >= 18);
+  console.log(adults); // Output: [ 18, 25, 30 ]
+}
