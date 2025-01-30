@@ -13,3 +13,9 @@
 
   console.log(greet("Ali")); // Output: Hello, Ali!
 }
+
+{
+  setTimeout(function () {
+    console.log("Hello after 3 seconds!");
+  }, 3000);
+}
