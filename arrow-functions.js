@@ -45,3 +45,9 @@
   const adults = ages.filter((age) => age >= 18);
   console.log(adults); // Output: [ 18, 25, 30 ]
 }
+
+{
+  const numbers = [1, 2, 3, 4, 5];
+  const sum = numbers.reduce((total, num) => total + num, 0);
+  console.log(sum); // 15
+}
